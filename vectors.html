@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Гродно: Код и Культура</title>
+    <title name="title">title</title>
     <link rel="shortcut icon" type="image/x-icon" href="assets/images/fav.svg">
     <!-- animate css -->
     <link rel="stylesheet" href="assets/css/plugins/animate.min.css">
@@ -34,7 +34,7 @@
                      <div class="header__wrapper">
                          <div class="header__logo">
                              <a href="index.html" class="header__logo--link">
-                                 <img src="assets/images/logo_160.png" alt="Главная">
+                                 <img src="assets/images/logo_160.png">
                              </a>
                          </div>
                          <div class="header__menu">
@@ -42,7 +42,7 @@
                                  <nav class="navigation__menu">
                                      <ul>
                                          <li class="navigation__menu--item">
-                                             <a href="index.html" class="navigation__menu--item__link">Главная</a>
+                                             <a name="a_main" href="index.html" class="navigation__menu--item__link">a_main</a>
                                          </li>
                                          <li class="navigation__menu--item">
                                              <a href="vectors.html" class="navigation__menu--item__link">Направления
@@ -69,6 +69,7 @@
                                      <div class="translate__lang">
                                          <ul>
                                              <li><a href="#" class="active">Русский</a></li>
+                                             <li><a href="#" class="active">English</a></li>
                                          </ul>
                                      </div>
                                  </div>
@@ -88,7 +89,7 @@
                 <div class="col-12">
                     <div class="breadcrumb-content">
                         <ul class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="index.html">Главная</a></li>
+                            <li class="breadcrumb-item"><a name="a_main" href="index.html">a_main</a></li>
                             <li class="breadcrumb-item active" aria-current="page">Направления обучения</li>
                         </ul>
                         <h2 class="section-title">Направления обучения</h2>
@@ -230,7 +231,7 @@
                  <div class="col-lg-4 col-md-6 col-sm-6">
                      <div class="footer__widget">
                          <div class="footer__widget--logo">
-                             <a href="index"><img src="assets/images/logo_bw_160.png" alt="Главная"></a>
+                             <a href="index"><img src="assets/images/logo_bw_160.png"></a>
                          </div>
                          <p class="footer__widget--description">
                              Мы — увлеченные своей деятельностью специалисты, стремящиеся предоставлять высококачественные
@@ -329,7 +330,7 @@
              <nav class="nav-main mainmenu-nav mt--30">
                  <ul class="mainmenu metismenu" id="mobile-menu-active">
                      <li>
-                         <a href="index.html" class="main">Главная</a>
+                         <a name="a_main" href="index.html" class="main">a_main</a>
                      </li>
                      <li>
                          <a href="vectors.html" class="main">Направления обучения</a>
@@ -363,7 +364,16 @@
          </div>
          <!-- mobile menu area end -->
      </div>
-     <!-- header style two End -->    <!-- scripts -->
+     <!-- header style two End -->
+     <div class="progress-wrap">
+         <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+             <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+                 style="transition: stroke-dashoffset 10ms linear 0s; stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 307.919;">
+             </path>
+         </svg>
+     </div>
+     <!-- rts back to top end -->
+     <div id="anywhere-home" class="">    <!-- scripts -->
     <!-- jquery js -->
     <script src="assets/js/vendor/jquery.min.js"></script>
     <!-- bootstrap 5.0.2 -->
@@ -390,6 +400,9 @@
     <!-- dymanic Contact Form -->
     <script src="assets/js/plugins/contact.form.js"></script>
     <script src="assets/js/plugins/nice-select.min.js"></script>
+    <!-- langSwitcher Js -->
+    <script src="assets/js/langData.js"></script>
+    <script src="assets/js/langSwitcher.js"></script>
     <!-- main Js -->
     <script src="assets/js/main.js"></script>
 </body>
