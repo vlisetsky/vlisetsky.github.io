@@ -141,7 +141,9 @@
   overflow: hidden;
 }
 
-.material-card .card-media img {
+.material-card img {
+  width: 100%;
+  display: block;
   aspect-ratio: 1;
   object-fit: cover;
   background: #f0f0f0;

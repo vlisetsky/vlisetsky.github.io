@@ -1,0 +1,118 @@
+.services-hero {
+  position: relative;
+  min-height: 220px;
+  margin-top: calc(-1 * var(--header-height));
+  display: grid;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background: #000;
+}
+
+.services-hero .container {
+  padding: calc(var(--header-height) + 38px) 0 var(--space-4);
+}
+
+.services-hero h1 {
+  margin: 0;
+  font-size: clamp(36px, 5vw, 55px);
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.services-hero .accent,
+.services-print .accent,
+.services-volume .accent,
+.services-finish .accent {
+  color: #ff5c43;
+}
+
+.services-hero p {
+  margin: 12px 0 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+.services-print {
+  background: #000;
+  color: #fff;
+  padding: 68px 0;
+}
+
+.services-print-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+.services-print-media img {
+  width: 100%;
+  display: block;
+}
+
+.services-print .eyebrow,
+.services-volume .eyebrow {
+  color: #fff;
+}
+
+.services-finish .eyebrow {
+  color: #999;
+}
+
+.services-copy h2 {
+  margin: 0 0 var(--space-3);
+  font-size: clamp(26px, 3.6vw, 42px);
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: uppercase;
+}
+
+.services-copy .btn {
+  border-radius: 8px;
+}
+
+.services-band {
+  position: relative;
+  padding: 138px 0;
+  background-color: #000;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.services-volume {
+  color: #fff;
+  background-image: url("../img/services/low-volume-banner.png");
+  background-position: center top;
+}
+
+.services-finish {
+  color: #000;
+  background-color: #fff;
+  background-image: url("../img/services/finishing-banner.jpg");
+  background-position: left center;
+}
+
+.services-band-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-4);
+  align-items: center;
+}
+
+@media (max-width: 900px) {
+  .services-print-grid,
+  .services-band-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .services-band-spacer {
+    display: none;
+  }
+
+  .services-print,
+  .services-band {
+    padding: var(--space-5) 0;
+  }
+}

@@ -108,6 +108,39 @@
   background: var(--color-text);
 }
 
+.site-header.is-solid-dark,
+.site-header.is-solid-dark.is-scrolled,
+.site-header.is-solid-dark.is-open {
+  background: #000;
+  border-bottom-color: transparent;
+  color: var(--color-text-on-dark);
+  box-shadow: none;
+}
+
+.site-header.is-solid-dark .logo-on-dark,
+.site-header.is-solid-dark.is-scrolled .logo-on-dark,
+.site-header.is-solid-dark.is-open .logo-on-dark {
+  display: block;
+}
+
+.site-header.is-solid-dark .logo-on-light,
+.site-header.is-solid-dark.is-scrolled .logo-on-light,
+.site-header.is-solid-dark.is-open .logo-on-light {
+  display: none;
+}
+
+.site-header.is-solid-dark .nav-toggle-bars,
+.site-header.is-solid-dark .nav-toggle-bars::before,
+.site-header.is-solid-dark .nav-toggle-bars::after,
+.site-header.is-solid-dark.is-scrolled .nav-toggle-bars,
+.site-header.is-solid-dark.is-scrolled .nav-toggle-bars::before,
+.site-header.is-solid-dark.is-scrolled .nav-toggle-bars::after,
+.site-header.is-solid-dark.is-open .nav-toggle-bars,
+.site-header.is-solid-dark.is-open .nav-toggle-bars::before,
+.site-header.is-solid-dark.is-open .nav-toggle-bars::after {
+  background: #fff;
+}
+
 .site-nav {
   display: flex;
   align-items: center;
@@ -258,6 +291,11 @@
 
   .site-header.is-open .site-nav {
     display: flex;
+  }
+
+  .site-header.is-solid-dark.is-open .site-nav {
+    background: #000;
+    border-bottom-color: #222;
   }
 
   .nav-list {

@@ -1,0 +1,132 @@
+.faq-hero {
+  position: relative;
+  min-height: 280px;
+  margin-top: calc(-1 * var(--header-height));
+  display: grid;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background: #000;
+}
+
+.faq-hero .container {
+  padding: calc(var(--header-height) + 38px) 0 var(--space-5);
+}
+
+.faq-hero h1 {
+  margin: 0;
+  font-size: clamp(36px, 5vw, 55px);
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.faq-hero .accent {
+  color: #ff5c43;
+}
+
+.faq-hero p {
+  margin: 12px 0 0;
+  color: #fff;
+  font-size: 16px;
+}
+
+.faq-section {
+  background: #fff;
+}
+
+.faq-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.faq-page .faq-list {
+  margin-top: 0;
+  gap: 0;
+}
+
+.faq-page .faq-item {
+  border: 0;
+  border-bottom: 1px solid #e5e4e3;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+}
+
+.faq-page .faq-item summary {
+  display: flex;
+  align-items: baseline;
+  gap: 18px;
+  padding: 10px 0;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #1a1a1a;
+  list-style: none;
+  transition: color 0.2s linear;
+}
+
+.faq-page .faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-page .faq-item summary::before {
+  content: "+";
+  flex-shrink: 0;
+  width: 14px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: inherit;
+}
+
+.faq-page .faq-item[open] summary::before {
+  content: "–";
+}
+
+.faq-page .faq-item summary:hover {
+  color: #ff5c43;
+}
+
+.faq-page .faq-item p {
+  padding: 10px 0 15px 32px;
+  margin: 0;
+  color: var(--color-text);
+  line-height: 32px;
+}
+
+.faq-guide {
+  padding: 10%;
+  border-radius: 18px;
+  background: #fff;
+  box-shadow: 3px 3px 18px 3px #e8e8e8;
+}
+
+.faq-guide-title {
+  margin: 0 0 12px;
+  font-size: clamp(22px, 2.4vw, 32px);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.faq-guide p {
+  margin: 0 0 var(--space-3);
+  color: #5d5f64;
+  line-height: 1.6;
+}
+
+.faq-guide .btn {
+  border-radius: 8px;
+}
+
+@media (max-width: 900px) {
+  .faq-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .faq-page .faq-item summary {
+    font-size: 20px;
+  }
+}

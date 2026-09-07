@@ -228,6 +228,13 @@
 
 /* Keep content above the next section's overlapping slant. */
 .hero:has(+ .has-slant),
+.page-hero:has(+ .has-slant),
+.quote-hero:has(+ .has-slant),
+.materials-hero:has(+ .has-slant),
+.faq-hero:has(+ .has-slant),
+.services-hero:has(+ .has-slant),
+.services-print:has(+ .has-slant),
+.services-band:has(+ .has-slant),
 .section:has(+ .has-slant),
 main:has(+ .has-slant) > .section:last-of-type {
   padding-bottom: calc(var(--space-5) + var(--slant-size));

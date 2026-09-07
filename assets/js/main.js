@@ -27,14 +27,14 @@
     window.addEventListener("scroll", updateScrollState, { passive: true });
   }
 
-  // One-page demo: keep all links and forms on this page.
+  // Placeholder links stay on the page; real page paths in the header still navigate.
   document.addEventListener("click", function (event) {
     var link = event.target.closest("a[href]");
     if (!link) {
       return;
     }
     var href = link.getAttribute("href");
-    if (href === "#" || href === "" || href.indexOf("http") !== 0) {
+    if (href === "#" || href === "") {
       event.preventDefault();
     }
   });
